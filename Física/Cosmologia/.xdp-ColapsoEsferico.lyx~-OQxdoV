@@ -1,0 +1,733 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Teoria de perturbações lineares para cosmologia
+\end_layout
+
+\begin_layout Standard
+Definindo um campo de flutuações de densidade de massa na forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta(\vec{r},t)=\frac{\rho(\vec{r},t)-\overline{\rho}(t)}{\overline{\rho}(t)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+de modo que
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\rho(\vec{r})=\overline{\rho}+\delta\overline{\rho}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Temos que a massa numa esfera de raio 
+\begin_inset Formula $R$
+\end_inset
+
+ se relaciona com a densidade
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{4}{3}\pi G\rho R^{3}=\frac{4}{3}\pi G\rho(1+\delta)R^{3}\label{eq:Mass}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde a massa da esfera é efetivamente conservada para fluidos não relativístcos,
+ ou seja, 
+\begin_inset Formula $\dot{M}=0$
+\end_inset
+
+.
+ Junto a isso, a aceleração gravitacional fica a forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{R}=-\frac{GM}{R^{2}}=-\frac{4}{3}\pi G\overline{\rho}(1+\delta)R\label{eq:Gravity}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Equação de continuidade de flutuações
+\end_layout
+
+\begin_layout Standard
+Tirando a derivada da equação 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Mass"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, com 
+\begin_inset Formula $\frac{dM}{dt}=0$
+\end_inset
+
+, temos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=\frac{4}{3}\pi\left[\dot{\overline{\rho}}(1+\delta)R^{3}+\dot{\delta}\overline{\rho}R^{3}+3\dot{R}R²\overline{\rho}(1+\delta)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Multiplicando a expressão por 
+\begin_inset Formula $\frac{3}{4\pi}\frac{1}{R^{3}\overline{\rho}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=\frac{\dot{\overline{\rho}}}{\overline{\rho}}(1+\delta)+\dot{\delta}+3\frac{\dot{R}}{R}(1+\delta)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os efeitos da expansão do universo podem ser considerados usando a Equação
+ dos fluidos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\epsilon}+3H\epsilon(1+w)=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para um fluido não relativístico, 
+\begin_inset Formula $w=0$
+\end_inset
+
+, sem perda de generalidade do modelo cosmológico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\epsilon}+3H\epsilon=0\implies\frac{\dot{\epsilon}}{\epsilon}=-3\frac{\dot{a}}{a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta equação támbem vale para conservação de massa, de modo que é possível
+ substituir na equação principal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{\delta}-3\frac{\dot{a}}{a}(1+\delta)+3\frac{\dot{R}}{R}(1+\delta)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\delta}+3(1+\delta)\left(\frac{\dot{R}}{R}-\frac{\dot{a}}{a}\right)=0\label{eq:Continuity}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que é a equação da continuidade para 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ Veja que é possível estimar o crescimento de uma amplitude de uma flutuação
+ de densidade partindo da taxa de crescimento do raio em relação a taxa
+ de expansão do universo 
+\begin_inset Formula $\left(\frac{\dot{R}}{R}-\frac{\dot{a}}{a}\right)$
+\end_inset
+
+, para um universo estático, este termo dependeria apenas da velocidade
+ do crescimento do raio da flutuação.
+\end_layout
+
+\begin_layout Standard
+Esta equação pode ser reescrita como
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d\delta}{dt}+3(1+\delta)\left(\frac{\frac{dR}{dt}}{R}-\frac{\frac{da}{dt}}{a}\right)=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Multiplicando por 
+\begin_inset Formula $dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}d\delta+3(1+\delta)\left(\frac{dR}{R}-\frac{da}{a}\right) & =0\\
+\frac{d\delta}{1+\delta} & =-3\left(\frac{dR}{R}-\frac{da}{a}\right)\\
+\int_{1+\delta_{i}}^{1+\delta}\frac{d\delta}{1+\delta} & =-3\left(\int_{R_{i}}^{R}\frac{dR}{R}-\int_{a_{i}}^{a}\frac{da}{a}\right)\\
+\ln\frac{1+\delta}{1+\delta_{i}} & =-3\left(\ln\frac{R}{R_{i}}-\ln\frac{a}{a_{i}}\right)\\
+\ln\frac{1+\delta}{1+\delta_{i}} & =3\left(-\ln\frac{R}{R_{i}}+\ln\frac{a}{a_{i}}\right)\\
+\ln\frac{1+\delta}{1+\delta_{i}} & =\ln\left(\frac{aR_{i}}{a_{i}R}\right)^{3}
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{1+\delta=(1+\delta_{i})\frac{R_{i}^{3}}{a_{i}^{3}}\frac{a^{3}}{R^{3}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ou seja: 
+\begin_inset Formula $1+\delta\propto\frac{a^{3}}{R^{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Equação do colapso
+\end_layout
+
+\begin_layout Standard
+Derivando a equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ temos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{\delta}+3\dot{\delta}\left(\frac{\dot{R}}{R}-\frac{\dot{a}}{a}\right)+3(1+\delta)\left(\frac{\ddot{R}}{R}-\frac{\dot{R}^{2}}{R^{2}}-\frac{\ddot{a}}{a}+\frac{\dot{a}^{2}}{a²}\right)=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As equações para o parâmetro de escala de fundo são facilmente determináveis
+ usando algum modelo cosmológico, de modo que os termos apresentados podem
+ ser facilmente substituídos.
+ Por exemplo, quando o universo era dominado por matéria a equação de Friedmann
+ assumia a forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\dot{a}^{2}}{a^{2}}=\frac{8\pi G}{3c^{2}}\overline{\epsilon}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e a equação da aceleração
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\ddot{a}}{a}=-\frac{4\pi G}{3c^{2}}\overline{\epsilon}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A aceleração do raio, 
+\begin_inset Formula $\ddot{R}$
+\end_inset
+
+, tem a forma demonstrada na eq 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gravity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+; por fim, 
+\begin_inset Formula $\frac{\dot{R}}{R}$
+\end_inset
+
+ pode ser obtido resolvendo para este termo na eq 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Substituindo primeiramente a eq 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ tem o efeito de
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\ddot{\delta}+3\dot{\delta}\left(-\frac{\dot{\delta}}{3(1+\delta)}+\frac{\dot{a}}{a}-2\frac{\dot{a}}{a}\right)+3(1+\delta)\left(\frac{\ddot{R}}{R}-\left(-\frac{\dot{\delta}}{3(1+\delta)}+\frac{\dot{a}}{a}\right)^{2}-\frac{\ddot{a}}{a}+\frac{\dot{a}^{2}}{a²}\right) & =0\\
+\ddot{\delta}-\frac{\dot{\delta}^{2}}{1+\delta}+3(1+\delta)\left(\frac{\ddot{R}}{R}-\left(\frac{\dot{\delta}}{3(1+\delta)}\right)^{2}+\frac{2\dot{\delta}}{3(1+\delta)}\frac{\dot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}-\frac{\ddot{a}}{a}+\frac{\dot{a}^{2}}{a²}\right) & =0\\
+\ddot{\delta}-\frac{\dot{\delta}^{2}}{1+\delta}-\frac{1}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2\dot{\delta}\frac{\dot{a}}{a}+3(1+\delta)\left(\frac{\ddot{R}}{R}-\frac{\ddot{a}}{a}\right) & =0\\
+\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2\dot{\delta}\frac{\dot{a}}{a}+3(1+\delta)\left(\frac{\ddot{R}}{R}-\frac{\ddot{a}}{a}\right) & =0
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituindo a equação 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gravity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2\frac{\dot{a}}{a}\dot{\delta}=3(1+\delta)\left(\frac{4}{3}\pi G\overline{\rho}(1+\delta)+\frac{\ddot{a}}{a}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituindo a equação da aceleração:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2H\dot{\delta} & =3(1+\delta)\left(\frac{4\pi G}{3c^{2}}\overline{\epsilon}(1+\delta)-\frac{4\pi G}{3c^{2}}\overline{\epsilon}\right)\\
+\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2H\dot{\delta} & =4\pi G\frac{\overline{\epsilon}}{c^{2}}(1+\delta)\left((1+\delta)-1\right)\\
+\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2H\dot{\delta} & =4\pi G\frac{\overline{\epsilon}}{c^{2}}\delta(1+\delta)
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na maior parte da evolução das flutuações temos um universo com prevalência
+ de matéria não relativística, de modo que é possível fazer a substituição
+ pelo parâmetro de densidade de matéria.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Omega_{m}=\frac{\overline{\epsilon}_{m}}{\epsilon_{c}}=\frac{8\pi G\overline{\epsilon}_{m}}{3c^{2}H^{2}}\implies\frac{\overline{\epsilon}_{m}}{c^{2}}=\frac{3}{8\pi G}H²\Omega_{m}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2H\dot{\delta}-\frac{3}{2}H^{2}\Omega_{m}\delta(1+\delta)=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que é a equação não linear do colapso esférico.
+ Para lineariza-la, assumimos que no limte 
+\begin_inset Formula $\delta\to0$
+\end_inset
+
+, 
+\begin_inset Formula $(1+\delta)\approx1$
+\end_inset
+
+ e 
+\begin_inset Formula $\dot{\delta}^{2}\approx0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\ddot{\delta}+2H\dot{\delta}-\frac{3}{2}\Omega_{m}H^{2}\delta=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Substituição pelo fator de escala
+\end_layout
+
+\begin_layout Standard
+Precisamos expressar a função em termos do fator de escala, ou seja, escrever
+ a equação diferentcial em termos de 
+\begin_inset Formula $\delta(a)$
+\end_inset
+
+, 
+\begin_inset Formula $\delta^{\prime}(a)=\frac{d\delta}{da}$
+\end_inset
+
+ e 
+\begin_inset Formula $\delta^{\prime\prime}(a)=\frac{d^{2}\delta}{da^{2}}$
+\end_inset
+
+.
+ Para isso, fazemos a substituição
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d\delta(a)}{dt}=\frac{d\delta}{da}\frac{da}{dt}=\delta^{\prime}\dot{a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d^{2}\delta(a)}{dt^{2}}=\frac{d}{dt}\left(\delta^{\prime}\dot{a}\right)=\frac{d}{dt}\left(\delta^{\prime}\right)\dot{a}+\delta^{\prime}\frac{d}{dt}\left(\dot{a}\right)=\delta^{\prime\prime}\dot{a}^{2}+\delta^{\prime}\ddot{a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com efeito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\ddot{\delta}-\frac{4}{3}\frac{\dot{\delta}^{2}}{1+\delta}+2\dot{\delta}H & =\frac{3}{2}H^{2}\Omega_{m}\delta(1+\delta)\\
+\delta^{\prime\prime}\dot{a}^{2}+\delta^{\prime}\ddot{a}-\frac{4}{3}\frac{(\delta^{\prime}\dot{a})^{2}}{1+\delta}+2(\dot{a}\delta^{\prime})H-\frac{3}{2}H^{2}\Omega_{m}\delta(1+\delta) & =0
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\delta^{\prime\prime}+\frac{\ddot{a}}{\dot{a}^{2}}\delta^{\prime}-\frac{4}{3}\frac{\delta^{\prime2}}{1+\delta}+2\frac{\delta^{\prime}}{a}-\frac{3}{2}\frac{\Omega_{m}}{a^{2}}\delta(1+\delta)=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para pequenas flutuações:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\delta^{\prime\prime}+\left(\frac{\ddot{a}}{\dot{a}^{2}}+\frac{2}{a}\right)\delta^{\prime}-\frac{3}{2}\frac{\Omega_{m}}{a^{2}}\delta=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituindo as equações de fundo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\dot{a}^{2}}{a^{2}}=\frac{8\pi G}{3c^{2}}\epsilon_{c}=\frac{8\pi G}{3c^{2}}\left[\overline{\epsilon}_{m}+\overline{\epsilon}_{de}+\overline{\epsilon}_{r}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\ddot{a}}{a}=-\frac{4\pi G}{3c^{2}}\left[\overline{\epsilon}_{m}+\overline{\epsilon}_{de}(1+3w_{de})+2\overline{\epsilon}_{r}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De modo que o termo 
+\begin_inset Formula $\frac{\ddot{a}}{\dot{a}^{2}}$
+\end_inset
+
+ pode ser subsituído por
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\frac{\ddot{a}}{\dot{a}^{2}}= & \frac{-\frac{4\pi G}{3c^{2}}\left[\overline{\epsilon}_{m}+\overline{\epsilon}_{de}(1+3w_{de})+2\overline{\epsilon}_{r}\right]a}{\frac{8\pi G}{3c^{2}}\epsilon_{c}a^{2}}\\
+\frac{\ddot{a}}{\dot{a}^{2}}= & -\frac{\left[\overline{\epsilon}_{m}+\overline{\epsilon}_{de}(1+3w_{de})+2\overline{\epsilon}_{r}\right]}{2\epsilon_{c}a}\\
+\frac{\ddot{a}}{\dot{a}^{2}}= & -\frac{\Omega_{m}+\Omega_{de}(1+3dw_{de})+\Omega_{r}}{2a}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\delta^{\prime\prime}+\left(2-\frac{\Omega_{m}+\Omega_{de}(1+3dw_{de})+\Omega_{r}}{2}\right)\frac{\delta^{\prime}}{a}-\frac{3}{2}\frac{\Omega_{m}}{a^{2}}\delta=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A equação pode ser reescrita como um sistema de equações diferenciais na
+ forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boxed{\begin{cases}
+\delta_{0}^{\prime}= & \delta_{1}\\
+\delta_{1}^{\prime}= & -\left(2-\frac{\Omega_{m}+\Omega_{de}(1+3dw_{de})+\Omega_{r}}{2}\right)\frac{\delta_{1}}{a}+\frac{3}{2}\frac{\Omega_{m}}{a^{2}}\delta_{0}
+\end{cases}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
